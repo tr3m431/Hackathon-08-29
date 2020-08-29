@@ -12,7 +12,7 @@ class Task(models.Model):
 
 
 # record the user's unavailable time
-class UnavailableTime(models.Models):
+class UnavailableTime(models.Model):
     # time that the user is asleep or otherwise incapable/unwilling to be productive
     unavailableTimeStart = models.IntegerField()
     unavailableTimeEnd = models.IntegerField()
