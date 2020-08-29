@@ -67,10 +67,23 @@ html, body {
 }
 
 #sign-up {
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+    height: 38px;
+    margin: 0.4rem;
+    padding: 0;
     background-color: white;
     color: black;
     border: 1px solid black;
+    text-align: center;
 }
+
+a > p {
+    margin-top: 0.7rem;
+}
+
+
 
 .break {
     height: 0;
