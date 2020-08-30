@@ -14,5 +14,10 @@ class Task(models.Model):
 # record the user's unavailable time
 class UnavailableTime(models.Model):
     # time that the user is asleep or otherwise incapable/unwilling to be productive
-    unavailableTimeStart = models.IntegerField()
-    unavailableTimeEnd = models.IntegerField()
+    unavailableTimeStart = models.TimeField()
+    unavailableTimeEnd = models.TimeField()
+
+class Optimizer:
+    def __init__(self, deadline, unavailableTimes):
+        deadline = Task().deadline
+        unavailableTimes = [UnavailableTime(), ]
