@@ -17,8 +17,8 @@ html, body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .half-container {
@@ -115,4 +115,131 @@ a > p {
     border-radius: 0.3rem;
     padding: 13px;
     transition: 0.5s;
+}
+
+.navbar {
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    background-color: rgb(59, 59, 59);
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-item {
+    width: 100%;
+    display: inline-block;
+    padding: 0.7rem
+}
+
+
+.schedule-builder-home {
+    text-decoration: none;
+    font-size: 27px;
+    font-style: italic;
+    color: white;
+    padding-left: 1rem;
+}
+
+.sign-up-form-header {
+    width: 300px;
+    justify-self: self-start;
+}
+
+.sign-up-form-header > * {
+    margin-left: 0.4rem;
+    font-weight: 100;
+}
+
+#sign-up-header-text {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.line {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.line:before,
+.line::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #d6d6d6;
+    margin: auto;
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+.line span {
+    color: #d6d6d6;
+    font-size: 14px;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
+.task-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: 77%;
+}
+
+
+table {
+    position: relative;
+    border-collapse: collapse;
+    z-index: 1;
+    border-collapse: separate;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    width: 70%;
+    align-content: center;
+}
+
+td, th {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    height: 2rem
+}
+
+
+tr:first-child th:first-child {border-radius: 0.4rem 0 0 0.4rem;}
+tr:first-child th:last-child {border-radius: 0 0.4rem 0.4rem 0;}
+tr td:first-child {border-radius: 0.4rem 0 0 0.4rem;}
+tr td:last-child {border-radius: 0 0.4rem 0.4rem 0;}
+
+
+th {
+    font-weight: normal;
+}
+
+.task-button-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.task-button-container button{
+    flex-grow: 1;
+    margin: 0;
+    margin-top: 0.7rem;
+}
+
+#add-task {
+    margin-right: 0.7rem;
 }
