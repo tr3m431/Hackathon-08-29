@@ -7,10 +7,17 @@
         <link rel="stylesheet" href="../static/style-sheet.css">
     </head>
 
-    <body> 
+    <body>
+      <h1>Schedule Manager</h1>
         <div class="container">
                 <div class="task-list">
-                    <p class="line"><span>9:30 - 10:00, August 31</span></p>
+
+                    <div class="task-button-container">
+                        <button class="button-default" id="add-task">Add task</button>
+                        <button class="button-default" id="edit-task">Edit task</button>
+                    </div>
+
+                    <p class="line"><span>9:30am - 10:00am, August 31</span></p>
                     <div class="break"></div>
                     <table>
                         <thead>
@@ -21,14 +28,51 @@
                         </thead>
 
                         <tbody id="task-table"></tbody>
-
                     </table>
                     <div class="break"></div>
-                    <div class="task-button-container">
-                        <button class="button-default" id="add-task">Add task</button>
-                        <button class="button-default" id="edit-task">Edit task</button>
-                    </div>
-                    
+
+                    <p class="line"><span>3:30pm - 4:20pm, August 31</span></p>
+                    <div class="break"></div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mid priority</th>
+                                <th>Go to Calc lecture</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="task-table"></tbody>
+                    </table>
+                    <div class="break"></div>
+
+                    <p class="line"><span>7:30pm - 8:00pm, August 31</span></p>
+                    <div class="break"></div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>High priority</th>
+                                <th>Take a shower</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="task-table"></tbody>
+                    </table>
+                    <div class="break"></div>
+
+                    <p class="line"><span>6:30pm - 7:00pm, August 31</span></p>
+                    <div class="break"></div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mid priority</th>
+                                <th>Get dinner</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="task-table"></tbody>
+                    </table>
+                    <div class="break"></div>
+
                 </div>
         </div>
     </body>
